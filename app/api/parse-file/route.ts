@@ -6,6 +6,7 @@ import * as XLSX from 'xlsx';
 import Papa from 'papaparse';
 import pdf from 'pdf-parse';
 import mammoth from 'mammoth';
+import JSZip from 'jszip';
 
 export const config = {
     api: {
@@ -57,6 +58,12 @@ export async function POST(request: NextRequest) {
             case 'doc':
                 parsedData = await parseWord(buffer);
                 fileType = 'word';
+                break;
+
+            case 'pptx':
+            case 'ppt':
+                parsedData = await parsePowerPoint(buffer);
+                fileType = 'powerpoint';
                 break;
 
             case 'json':
@@ -136,4 +143,41 @@ async function parseWord(buffer: Buffer) {
         text: result.value,
         messages: result.messages,
     };
+}
+
+// PowerPoint Parser
+async function parsePowerPoint(buffer: Buffer) {
+    try {
+        const zip = await JSZip.loadAsync(buffer);
+        const slides: string[] = [];
+
+        // Extract slide content from PPTX
+        const slideFiles = Object.keys(zip.files).filter(
+            name => name.startsWith('ppt/slides/slide') && name.endsWith('.xml')
+        );
+
+        for (const slideFile of slideFiles) {
+            const content = await zip.files[slideFile].async('text');
+            // Extract text from XML (basic extraction)
+            const textMatches = content.match(/<a:t>([^<]+)<\/a:t>/g);
+            if (textMatches) {
+                const slideText = textMatches
+                    .map(match => match.replace(/<\/?a:t>/g, ''))
+                    .join(' ');
+                slides.push(slideText);
+            }
+        }
+
+        return {
+            slides,
+            slideCount: slides.length,
+        };
+    } catch (error) {
+        console.error('PowerPoint parsing error:', error);
+        return {
+            slides: [],
+            slideCount: 0,
+            error: 'Failed to parse PowerPoint file',
+        };
+    }
 }
