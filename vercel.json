@@ -1,0 +1,19 @@
+# Vercel Deployment Configuration
+
+# Build Command
+# (Vercel auto-detects Next.js, but you can specify if needed)
+# npm run build
+
+# Output Directory
+# .next
+
+# Install Command
+# npm install
+
+# Development Command
+# npm run dev
+
+# Environment Variables (Set these in Vercel Dashboard)
+# GEMINI_API_KEY=your_actual_api_key_here
+# GEMINI_MODEL=gemini-pro
+# NODE_ENV=production
