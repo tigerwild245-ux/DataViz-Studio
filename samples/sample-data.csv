@@ -1,0 +1,24 @@
+Quarter,Revenue,Customers,Employees,Retention Rate,NPS Score,Churn Rate
+Q1 2024,1800000,6200,125,89,72,3.2
+Q2 2024,2100000,7150,135,91,75,2.8
+Q3 2024,2250000,7890,142,92,76,2.4
+Q4 2024,2400000,8523,148,92,78,2.1
+
+Product,Revenue,Units Sold,Growth %,Category
+Enterprise Suite,980000,245,32,Software
+Professional Plan,720000,1800,18,Software
+Starter Package,450000,4500,12,Software
+Add-on Services,250000,1250,45,Services
+
+Department,Revenue,Employees,Target Achievement %
+Sales,1200000,45,108
+Marketing,800000,32,95
+Operations,400000,58,102
+Technology,350000,35,112
+Customer Success,180000,28,98
+
+Region,Revenue,Customers,Growth %
+North America,1400000,4800,22
+Europe,650000,2100,28
+Asia Pacific,280000,1200,35
+Latin America,70000,423,18

@@ -1,0 +1,176 @@
+{
+  "company": "TechCorp Solutions",
+  "quarter": "Q4 2024",
+  "metrics": {
+    "revenue": {
+      "total": 2400000,
+      "growth": 24,
+      "currency": "USD"
+    },
+    "customers": {
+      "total": 8523,
+      "new": 1247,
+      "retained": 7276
+    },
+    "performance": {
+      "nps_score": 78,
+      "retention_rate": 92,
+      "churn_rate": 2.1
+    }
+  },
+  "departments": [
+    {
+      "name": "Sales",
+      "revenue": 1200000,
+      "employees": 45,
+      "target_achievement": 108
+    },
+    {
+      "name": "Marketing",
+      "revenue": 800000,
+      "employees": 32,
+      "target_achievement": 95
+    },
+    {
+      "name": "Operations",
+      "revenue": 400000,
+      "employees": 58,
+      "target_achievement": 102
+    }
+  ],
+  "top_products": [
+    {
+      "name": "Enterprise Suite",
+      "revenue": 980000,
+      "units_sold": 245,
+      "growth": 32
+    },
+    {
+      "name": "Professional Plan",
+      "revenue": 720000,
+      "units_sold": 1800,
+      "growth": 18
+    },
+    {
+      "name": "Starter Package",
+      "revenue": 450000,
+      "units_sold": 4500,
+      "growth": 12
+    },
+    {
+      "name": "Add-on Services",
+      "revenue": 250000,
+      "units_sold": 1250,
+      "growth": 45
+    }
+  ],
+  "quarterly_trends": [
+    {
+      "quarter": "Q1 2024",
+      "revenue": 1800000,
+      "customers": 6200
+    },
+    {
+      "quarter": "Q2 2024",
+      "revenue": 2100000,
+      "customers": 7150
+    },
+    {
+      "quarter": "Q3 2024",
+      "revenue": 2250000,
+      "customers": 7890
+    },
+    {
+      "quarter": "Q4 2024",
+      "revenue": 2400000,
+      "customers": 8523
+    }
+  ],
+  "team": [
+    {
+      "name": "Sarah Johnson",
+      "role": "CEO",
+      "department": "Executive",
+      "responsibilities": ["Strategic planning", "Stakeholder relations", "Company vision"]
+    },
+    {
+      "name": "Michael Chen",
+      "role": "CTO",
+      "department": "Technology",
+      "responsibilities": ["Technology strategy", "Product development", "Innovation"]
+    },
+    {
+      "name": "Emily Rodriguez",
+      "role": "CFO",
+      "department": "Finance",
+      "responsibilities": ["Financial planning", "Budget management", "Investor relations"]
+    },
+    {
+      "name": "David Kim",
+      "role": "VP Sales",
+      "department": "Sales",
+      "responsibilities": ["Sales strategy", "Team leadership", "Revenue growth"]
+    }
+  ],
+  "insights": [
+    "Revenue growth of 24% exceeds industry average of 18%",
+    "Customer retention rate of 92% indicates strong product-market fit",
+    "Enterprise Suite showing exceptional growth at 32% - recommend increased focus",
+    "Q4 shows strongest performance with consistent upward trend across all quarters"
+  ],
+  "swot": {
+    "strengths": [
+      "Strong market position in enterprise segment",
+      "Experienced leadership team",
+      "Solid financial performance and growth",
+      "High customer satisfaction scores"
+    ],
+    "weaknesses": [
+      "Limited presence in emerging markets",
+      "Product development cycle slower than competitors",
+      "Customer support scaling challenges"
+    ],
+    "opportunities": [
+      "Expanding into Asia-Pacific markets",
+      "AI integration for product enhancement",
+      "Strategic partnerships with major platforms",
+      "New vertical market penetration"
+    ],
+    "threats": [
+      "Increasing competition from established players",
+      "Economic uncertainty affecting enterprise budgets",
+      "Rapid technology changes requiring constant innovation",
+      "Regulatory compliance in new markets"
+    ]
+  },
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "title": "Expand Enterprise Suite Marketing",
+      "description": "Given 32% growth, allocate additional resources to enterprise segment marketing and sales enablement.",
+      "owner": "David Kim",
+      "timeline": "Q1 2025"
+    },
+    {
+      "priority": "HIGH",
+      "title": "Scale Customer Support",
+      "description": "Address scaling challenges by implementing AI-powered support tools and hiring additional team members.",
+      "owner": "Sarah Johnson",
+      "timeline": "Q1-Q2 2025"
+    },
+    {
+      "priority": "MEDIUM",
+      "title": "Accelerate Product Development",
+      "description": "Streamline development process and invest in engineering resources to match competitor pace.",
+      "owner": "Michael Chen",
+      "timeline": "Q2 2025"
+    },
+    {
+      "priority": "MEDIUM",
+      "title": "Asia-Pacific Market Entry",
+      "description": "Conduct market research and establish strategic partnerships for APAC expansion.",
+      "owner": "Emily Rodriguez",
+      "timeline": "Q2-Q3 2025"
+    }
+  ]
+}
